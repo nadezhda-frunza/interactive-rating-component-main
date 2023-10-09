@@ -1,0 +1,155 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --orange: hsl(25, 97%, 53%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  background-color: var(--very-dark-blue);
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container,
+.thank-you {
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(212, 18%, 14%),
+    hsl(220, 16%, 11%)
+  );
+  border-radius: 2rem;
+  max-width: 400px;
+}
+
+.container img {
+  background-color: #1e252c;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.container h1 {
+  color: #fff;
+  margin: 2rem 0 1rem;
+}
+
+.container p {
+  color: var(--light-grey);
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.8;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  font-family: inherit;
+  font-weight: 700;
+  border: none;
+  background-color: #1e252c;
+  padding-top: 0.2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--orange);
+}
+
+.btn:focus {
+  background-color: var(--light-grey);
+}
+
+.btn-submit {
+  padding: 0.8rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  background-color: var(--orange);
+  width: 100%;
+  border-style: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #fff;
+  color: var(--orange);
+}
+
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.thank-you img {
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+.thank-you h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.thank-you-text {
+  color: var(--light-grey);
+}
+
+.hidden {
+  display: none;
+}
+
+.rating {
+  color: var(--orange);
+  background-color: #1e252c;
+  border-radius: 1.875rem;
+  padding: 0 0.3rem;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.attribution {
+  margin-top: 10rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
